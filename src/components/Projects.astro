@@ -4,36 +4,48 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import Python from "./icons/Python.astro"
+import MediaPipe from "./icons/Mediapipe.astro"
 
 const TAGS = {
-  NEXT: {
+  DEEPLEARNING: {
     name: "Deep Learning",
     class: "bg-black text-white",
     icon: NextJS,
   },
-  TAILWIND: {
-    name: "Data Mining",
+  DATAWRANGLING: {
+    name: "Data wrangling",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  PYTHON: {
+    name: "Python",
+    class: "bg-black text-white",
+    icon: Python,
+  },
+  MEDIAPIPE: {
+    name: "Mediapipe",
+    class: "bg-[#003159] text-white",
+    icon: MediaPipe,
+  }
 }
 const PROJECTS = [
   {
-    title: "Wildlife Image Segmentation with Deep Learning Models",
+    title: "Segmentación de imágenes de fauna salvaje con modelos de aprendizaje profundo",
     description:
       "",
     link: "https://slides.com/sergiopereadelacasa/deck-860e4a/fullscreen",
     github: "https://github.com/SergioPerea99/Image-Segmentation-Deep-Learning",
-    image: "/projects/wwf.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    image: "/projects/wwf_AI.png",
+    tags: [TAGS.DEEPLEARNING, TAGS.DATAWRANGLING],
   },
   {
-    title: "Proyecto 2",
+    title: "Sistema de aprendizaje de japonés con interacción multimodal",
     description:
-      "",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Este proyecto es un sistema de aprendizaje de japonés que aprovecha la interacción multimodal, centrándose específicamente en la expresión oral y escrita. El sistema utiliza una pizarra virtual en la que los usuarios pueden escribir caracteres kanji, reforzando el aprendizaje mediante la práctica verbal y escrita. La aplicación se basa en MediaPipe para el seguimiento de la mano en tiempo real y el reconocimiento de gestos, proporcionando una experiencia de aprendizaje intuitiva e interactiva.",
+    github: "https://github.com/SergioPerea99/KANJI-STUDY-MULTIMODAL-INTERFACES/tree/main",
+    image: "/projects/kanji.png",
+    tags: [TAGS.PYTHON, TAGS.MEDIAPIPE],
   },
 ]
 ---
